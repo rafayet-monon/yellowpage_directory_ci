@@ -1,0 +1,1 @@
+<h3>Dear Customer Your Order Successfully Placed.You will be confirmed over phone</h3>
