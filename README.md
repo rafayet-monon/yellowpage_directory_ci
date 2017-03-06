@@ -1,7 +1,7 @@
 # yellowpage_directory_ci
 A online directory service with e commerce created using PHP Codeigniter.
 
-This is a dynamic web application. 
+This is a dynamic web application. It has following features-
 
         1.	Service categories.
         2.	Sub category under category.
@@ -34,7 +34,44 @@ This is a dynamic web application.
         29.	Manage comments for super admin.
 
 
+*Created in PHP 5.6.3*
+Installation
+===============
+Create a folder in htdocs named "workspace". Then in workspace create another folder named "Final_year_project" and put above files. Or you can edit the .htaccess file to change directory.
+
+Database Import
+===============
+Create a database named "db_yellowpage' with utf8_general_ci collation. Then import the .sql fie.
+
 Admin Login:
-Final_year_project/admin_login
-Email: kaziabir36@gmail.com
-pass: 12345
+===============
+localhost/Final_year_project/admin_login
+Email: rafayet.monon@gmail.com
+Password: 12345
+
+Mail Function
+===============
+Mail system in this project uses Google's SMTP server. To get a fully funcioning mail following things need to be changed-
+
+1. Edit "sender's email address" and "sender's password" and put your email id and email password. You will get this in "public function mail()" in "super_admin" controller.
+
+2. Find [mail function] in xampp/php/php.ini and change the following lines-
+   SMTP=smtp.gmail.com
+   smtp_port=465
+   sendmail_from = my-gmail-id@gmail.com //sender's email address
+   sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+
+3. Find sendmail.ini in xampp/sendmail and change the following lines-
+   smtp_server=smtp.gmail.com
+   smtp_port=587
+   error_logfile=error.log
+   debug_logfile=debug.log
+   auth_username=my-gmail-id@gmail.com  //sender's email address
+   auth_password=my-gmail-password      //sender's email password
+   force_sender=my-gmail-id@gmail.com   //sender's email address
+   
+4. If you are using SMTP server with your email for the first time you might get a mail in your Gmail to approve less secure apps.
+
+DONE!! Now the project should work just fine. \m/
+
+
