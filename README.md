@@ -56,10 +56,10 @@ Mail system in this project uses Google's SMTP server. To get a fully funcioning
 1. Edit "sender's email address" and "sender's password" and put your email id and email password. You will get this in "public function mail()" in "super_admin" controller.
 
 2. Find [mail function] in xampp/php/php.ini and change the following lines-
-   i) SMTP=smtp.gmail.com
-   ii) smtp_port=465
-   iii) sendmail_from = my-gmail-id@gmail.com //sender's email address
-   iv) sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+SMTP=smtp.gmail.com
+smtp_port=465
+sendmail_from = my-gmail-id@gmail.com //sender's email address
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
 
 3. Find sendmail.ini in xampp/sendmail and change the following lines-
    i) smtp_server=smtp.gmail.com
