@@ -56,19 +56,19 @@ Mail system in this project uses Google's SMTP server. To get a fully funcioning
 1. Edit "sender's email address" and "sender's password" and put your email id and email password. You will get this in "public function mail()" in "super_admin" controller.
 
 2. Find [mail function] in xampp/php/php.ini and change the following lines-
-   SMTP=smtp.gmail.com
-   smtp_port=465
-   sendmail_from = my-gmail-id@gmail.com //sender's email address
-   sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+   i) SMTP=smtp.gmail.com
+   ii) smtp_port=465
+   iii) sendmail_from = my-gmail-id@gmail.com //sender's email address
+   iv) sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
 
 3. Find sendmail.ini in xampp/sendmail and change the following lines-
-   smtp_server=smtp.gmail.com
-   smtp_port=587
-   error_logfile=error.log
-   debug_logfile=debug.log
-   auth_username=my-gmail-id@gmail.com  //sender's email address
-   auth_password=my-gmail-password      //sender's email password
-   force_sender=my-gmail-id@gmail.com   //sender's email address
+   i) smtp_server=smtp.gmail.com
+   ii) smtp_port=587
+   iii) error_logfile=error.log
+   iv) debug_logfile=debug.log
+   v) auth_username=my-gmail-id@gmail.com  //sender's email address
+   vi) auth_password=my-gmail-password      //sender's email password
+   vii) force_sender=my-gmail-id@gmail.com   //sender's email address
    
 4. If you are using SMTP server with your email for the first time you might get a mail in your Gmail to approve less secure apps.
 
